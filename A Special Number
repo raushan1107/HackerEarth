@@ -1,0 +1,12 @@
+def digitSum(n):
+    sum=0
+    while(n>0):
+        sum +=(n%10)
+        n=n//10
+    return sum
+t=int(input())
+for i in range(t):
+    a=int(input())
+    while(digitSum(a)%4 !=0):
+        a+=1
+    print(a)
